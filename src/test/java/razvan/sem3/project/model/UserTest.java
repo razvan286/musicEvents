@@ -10,24 +10,5 @@ public class UserTest extends TestCase {
         assertEquals(expectedValue, artist.getUsername());
     }
 
-    public void testSetUsername() {
-    }
 
-    public void testGetPassword() {
-    }
-
-    public void testSetPassword() {
-    }
-
-    public void testGetFirstName() {
-    }
-
-    public void testSetFirstName() {
-    }
-
-    public void testGetLastName() {
-    }
-
-    public void testSetLastName() {
-    }
 }
