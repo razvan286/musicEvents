@@ -18,7 +18,7 @@ public class ArtistsResources {
     @Path("/hello")
     @Produces(MediaType.TEXT_PLAIN)
     public Response sayHello() {
-        String msg = " Hello, your resources work!";
+        String msg = "Hello, your resources work!";
         return Response.ok(msg).build();
     }
     @GET
