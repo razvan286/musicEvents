@@ -1,14 +1,14 @@
 
-\
-java:S1854":Remove this useless assignment to local variable "server".(Õ¯û°üÿÿÿÿ8â´áæÉ.
-P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8â´áæÉ.
-Q
-java:S1128"4Remove this unused import 'java.awt.event.KeyEvent'.(¬ğİÍ8â´áæÉ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñÚš­øÿÿÿÿ8â´áæÉ.
 Z
 java:S1128"8Remove this unused import 'javax.ws.rs.core.UriBuilder'.(•´‚öúÿÿÿÿ8â´áæÉ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñÚš­øÿÿÿÿ8â´áæÉ.
+Q
+java:S1128"4Remove this unused import 'java.awt.event.KeyEvent'.(¬ğİÍ8â´áæÉ.
+\
+java:S1854":Remove this useless assignment to local variable "server".(Õ¯û°üÿÿÿÿ8â´áæÉ.
 M
 java:S1481"+Remove this unused "server" local variable.(Õ¯û°üÿÿÿÿ8â´áæÉ.
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8â´áæÉ.
 N
 java:S1128",Remove this unused import 'java.io.Console'.(æÅªıÿÿÿÿ8â´áæÉ.

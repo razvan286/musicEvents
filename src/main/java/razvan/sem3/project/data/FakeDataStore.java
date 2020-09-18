@@ -23,7 +23,7 @@ public class FakeDataStore {
     public List<Artist> getArtists() {
         List<Artist> artists = new ArrayList<>();
         for (User u: users) {
-            if(u.equals(Artist.class)){
+            if(u instanceof Artist){
                 artists.add((Artist) u);
             }
         }
@@ -35,9 +35,8 @@ public class FakeDataStore {
 
     public User getArtistByUsername(String username){
         for (User a: users) {
-            if(a.getUsername() == username && a.equals(Artist.class)){
+            if(a instanceof Artist && a.getUsername() == username)
                 return a;
-            }
         }
         return null;
     }

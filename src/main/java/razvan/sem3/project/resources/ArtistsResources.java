@@ -21,8 +21,19 @@ public class ArtistsResources {
         String msg = " Hello, your resources work!";
         return Response.ok(msg).build();
     }
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllArtists(){
+        List<Artist> artists;
+        artists = fakeDataStore.getArtists();
+        GenericEntity<List<Artist>> entity = new GenericEntity<>(artists) {};
+        return Response.ok(entity).build();
+    }
 
-    @GET  //GET at https://localhost:XXXX/countries/NL
+
+    //Not working -- SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+    // ????????? how to solve
+    @GET  //GET at https://localhost:XXXX/artists/artist1
     @Path("{user}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getArtistPath(@PathParam("user") String username){
@@ -34,15 +45,7 @@ public class ArtistsResources {
         }
     }
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllArtists(){
-        List<Artist> artists;
-        artists = fakeDataStore.getArtists();
 
-        GenericEntity<List<Artist>> entity = new GenericEntity<>(artists) {};
-        return Response.ok(entity).build();
-    }
 
 
 }

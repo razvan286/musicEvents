@@ -6,7 +6,7 @@ public class Artist extends User {
     }
 
     @Override
-    public String getUsername() {
+    public String getUsername(){
         return super.getUsername();
     }
 
