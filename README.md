@@ -1,0 +1,6 @@
+- REST API service layer including web sockets for real time chat
+- Json Web Token secured login
+- Java secured backend (using Jersey framework) with database access (MySQL) through Object
+- Relation Mapping
+- React.js for frontend
+- JUnit Testing
